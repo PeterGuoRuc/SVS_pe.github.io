@@ -1,1 +1,7 @@
+# Setup
+title:        Beauty is life
+tagline:      Beauty
+baseurl:      ""
+locale:       "en"
+
 theme: jekyll-theme-cayman
