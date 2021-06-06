@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <title>SEQUENCE-TO-SEQUENCE SINGING VOICE SYNTHESIS WITH PERCEPTUAL ENTROPY LOSS</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="poster.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="bootstrap/assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container"> 
+
+      <div class="page-header">
+        <h1>
+          SEQUENCE-TO-SEQUENCE SINGING VOICE SYNTHESIS WITH PERCEPTUAL ENTROPY LOSS
+        </h1> 
+        <p class="centered">Contact: {shuaiguo}</p>
+        <p class="lead">
+          <a class="lead_link" href="https://arxiv.org/abs/2010.12024">[arXiv preprint]</a>
+        </p>
+        <p class="centered">Presented at ICASSP 2021</p>
+      </div>
+
+      <h3>Abstract</h3>
+      <p>The neural network (NN) based singing voice synthesis (SVS) systems require sufficient data to train well and are prone to over-fitting due to data scarcity.
+        However, we often encounter data limitation problem in building SVS systems because of high data acquisition and annotation cost. 
+        In this work, we propose a Perceptual Entropy (PE) loss derived from a psycho-acoustic hearing model to regularize the network. 
+        With a one-hour open-source singing voice database, we explore the impact of the PE loss on various mainstream sequence-to-sequence models, including the RNN-based, transformer-based, and conformer-based models. 
+        Our experiments show that the PE loss can mitigate the over-fitting problem and significantly improve the synthesized singing quality reflected in objective and subjective evaluations.
+      </p>
+
+      <center><img src="files/svs_model.jpg"/ height="200" width="200"></center>
+      
+      <h3>Comparison</h3>
+      <div class="row">
+        <div class="col-md-3">FFT-NPSS (proposed)</div>
+        <div class="col-md-3">FFT-NPSS w/ ground truth dur.</div>
+        <div class="col-md-3">FFT-NPSS w/o self-attention</div>
+        <div class="col-md-3">AR-NPSS (baseline)</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"><audio src="files/1_Feel_4.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/2_Feel_4.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/3_Feel_4.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/4_Feel_4.mp3" controls></audio></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"><audio src="files/1_Feel_19.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/2_Feel_19.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/3_Feel_19.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/4_Feel_19.mp3" controls></audio></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"><audio src="files/1_Rio_8.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/2_Rio_8.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/3_Rio_8.mp3" controls></audio></div>
+        <div class="col-md-3"><audio src="files/4_Rio_8.mp3" controls></audio></div>
+      </div>
+
+      <h3>Acknowledgments</h3>
+      <p>The proprietary dataset used in these experiments was provided by Voctro Labs.</p>
+
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
